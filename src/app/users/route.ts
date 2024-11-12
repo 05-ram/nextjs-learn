@@ -22,6 +22,7 @@ export async function POST(request: Request) {
     }
 
     users.push(newUser);
+
     return new Response(JSON.stringify(newUser), {
         headers: {
             "content-type": "application/json",
